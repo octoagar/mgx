@@ -8,7 +8,7 @@
 // @run-at       document-start
 // @grant        GM_xmlhttpRequest
 // @connect      glitch.me
-// @updateURL    http://octooo.glitch.me/index.html?v=
+// @updateURL    http://octoagar.github.io/mgx/index.html?v=
 // ==/UserScript==
 
 if (location.host === "agar.io" && location.href !== "https://agar.io/MGx") {
@@ -19,7 +19,7 @@ if (location.host === "agar.io" && location.href !== "https://agar.io/MGx") {
 
 GM_xmlhttpRequest({
     method: 'GET',
-    url: 'http://octooo.glitch.me/index.html?v=' + Math.random(),
+    url: 'http://octoagar.github.io/mgx/index.html?v=' + Math.random(),
     onload: function(data) {
         document.open();
         document.write(data.responseText);
